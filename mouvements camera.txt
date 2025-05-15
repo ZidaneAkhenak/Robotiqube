@@ -1,0 +1,602 @@
+ Program
+   Init Variables
+   Robot Program
+     Mouvements L'
+       MoveJ
+         Waypoint_2
+         MoveJ
+           Waypoint_64
+           MoveJ
+             Waypoint_65
+             Gripper Close (2)
+             MoveJ
+               Waypoint_66
+               MoveJ
+                 Waypoint_67
+                 MoveJ
+                   Waypoint_68
+                   MoveJ
+                     Waypoint_79
+                   Gripper Open (2)
+                   MoveJ
+                     Waypoint_2
+                     MoveJ
+                       MoveJ
+                         MoveJ
+                           MoveJ
+                             MoveJ
+                               MoveJ
+                                 Waypoint_73
+                                 Gripper Close (2)
+                                 MoveJ
+                                   Waypoint_77
+                                   Gripper Open (2)
+                                   MoveJ
+                                     Waypoint_2
+                                     MoveJ
+                                       Waypoint_64
+                                       MoveJ
+                                         Waypoint_65
+                                         Gripper Close (2)
+                                         MoveJ
+                                           Waypoint_66
+                                           MoveJ
+                                             Waypoint_67
+                                             MoveJ
+                                               Waypoint_70
+                                               Gripper Open (2)
+                                               MoveJ
+                                                 Waypoint_2
+                                                 MoveJ
+                                                   Waypoint_71
+                                                   Gripper Close (2)
+                                                   Gripper Open (2)
+                                                   MoveJ
+                                                     Waypoint_72
+                                                     Gripper Close (2)
+                                                     MoveJ
+                                                       Waypoint_75
+                                                       MoveJ
+                                                         Waypoint_76
+                                                         MoveJ
+                                                           Waypoint_78
+                                                           Waypoint_78
+                                                         Gripper Open (2)
+                                                         MoveJ
+                                                           Waypoint_2
+     Mouvements L
+       MoveJ
+         Waypoint_2
+         MoveJ
+           Waypoint_64
+           MoveJ
+             Waypoint_65
+             Gripper Close (2)
+             MoveJ
+               Waypoint_66
+               MoveJ
+                 Waypoint_67
+                 MoveJ
+                   Waypoint_68
+                   MoveJ
+                     Waypoint_79
+                   Gripper Open (2)
+                   MoveJ
+                     Waypoint_2
+                     MoveJ
+                       MoveJ
+                         MoveJ
+                           MoveJ
+                             MoveJ
+                               Waypoint_2
+                               MoveJ
+                                 Waypoint_73
+                                 Gripper Close (2)
+                                 MoveJ
+                                   Waypoint_74
+                                   Gripper Open (2)
+                                   MoveJ
+                                     Waypoint_2
+                                     MoveJ
+                                       Waypoint_64
+                                       MoveJ
+                                         Waypoint_65
+                                         Gripper Close (2)
+                                         MoveJ
+                                           Waypoint_66
+                                           MoveJ
+                                             Waypoint_67
+                                             MoveJ
+                                               Waypoint_70
+                                               Gripper Open (2)
+                                               MoveJ
+                                                 Waypoint_2
+                                                 MoveJ
+                                                   Waypoint_71
+                                                   Gripper Close (2)
+                                                   Gripper Open (2)
+                                                   MoveJ
+                                                     Waypoint_72
+                                                     Gripper Close (2)
+                                                     MoveJ
+                                                       Waypoint_75
+                                                       MoveJ
+                                                         Waypoint_76
+                                                         MoveJ
+                                                           Waypoint_78
+                                                         Gripper Open (2)
+                                                         MoveJ
+                                                           Waypoint_2
+     Mouvement U
+       MoveJ
+         Waypoint_2
+         MoveJ
+           Waypoint_8
+           Gripper Close (2)
+           MoveJ
+             Waypoint_11
+             Gripper Open (2)
+             MoveJ
+               Waypoint_2
+             Mouvement U'
+               MoveJ
+                 Waypoint_2
+                 MoveJ
+                   Waypoint_13
+                   Gripper Close (2)
+                   MoveJ
+                     Waypoint_12
+                     Gripper Open (2)
+                     Mouvement F
+                       MoveJ
+                         Waypoint_2
+                         MoveJ
+                           Waypoint_14
+                           Gripper Close (2)
+                           MoveJ
+                             Waypoint_15
+                             MoveJ
+                               Waypoint_23
+                             MoveJ
+                               Waypoint_16
+                               Gripper Open (2)
+                               MoveJ
+                                 Waypoint_2
+                                 MoveJ
+                                   Waypoint_17
+                                   Gripper Close (2)
+                                   MoveJ
+                                     Waypoint_18
+                                     MoveJ
+                                       Waypoint_19
+                                       MoveJ
+                                         Waypoint_20
+                                         Gripper Open (2)
+                                         MoveJ
+                                           Waypoint_2
+                                           MoveJ
+                                             Waypoint_21
+                                             Gripper Close (2)
+                                             MoveJ
+                                               Waypoint_32
+                                             MoveJ
+                                               MoveJ
+                                                 Waypoint_2
+                                                 MoveJ
+                                                   Waypoint_24
+                                                   Gripper Close (2)
+                                                   MoveJ
+                                                     Waypoint_25
+                                                     MoveJ
+                                                       Waypoint_27
+                                                     MoveJ
+                                                       Waypoint_26
+                                                       Gripper Open (2)
+                                                       MoveJ
+                                                         Waypoint_2
+                                                         MoveJ
+                                                           Waypoint_28
+                                                           Gripper Close (2)
+                                                           MoveJ
+                                                             Waypoint_29
+                                                             MoveJ
+                                                               Waypoint_30
+                                                               MoveJ
+                                                                 Waypoint_31
+                                                                 Gripper Open (2)
+                                                                 MoveJ
+                                                                   Waypoint_2
+                     Mouvement F'
+                       MoveJ
+                         Waypoint_2
+                         MoveJ
+                           Waypoint_14
+                           Gripper Close (2)
+                           MoveJ
+                             Waypoint_15
+                             MoveJ
+                               Waypoint_23
+                             MoveJ
+                               Waypoint_16
+                               Gripper Open (2)
+                               MoveJ
+                                 Waypoint_2
+                                 MoveJ
+                                   Waypoint_17
+                                   Gripper Close (2)
+                                   MoveJ
+                                     Waypoint_18
+                                     MoveJ
+                                       Waypoint_19
+                                       MoveJ
+                                         Waypoint_20
+                                         Gripper Open (2)
+                                         MoveJ
+                                           Waypoint_2
+                                           MoveJ
+                                             Waypoint_21
+                                             Gripper Close (2)
+                                             MoveJ
+                                               Waypoint_22
+                                               Gripper Open (2)
+                                             MoveJ
+                                               MoveJ
+                                                 Waypoint_2
+                                                 MoveJ
+                                                   Waypoint_24
+                                                   Gripper Close (2)
+                                                   MoveJ
+                                                     Waypoint_25
+                                                     MoveJ
+                                                       Waypoint_27
+                                                     MoveJ
+                                                       Waypoint_26
+                                                       Gripper Open (2)
+                                                       MoveJ
+                                                         Waypoint_2
+                                                         MoveJ
+                                                           Waypoint_28
+                                                           Gripper Close (2)
+                                                           MoveJ
+                                                             Waypoint_29
+                                                             MoveJ
+                                                               Waypoint_30
+                                                               MoveJ
+                                                                 Waypoint_31
+                                                                 Gripper Open (2)
+                                                                 MoveJ
+                                                                   Waypoint_2
+                     Mouvement B'
+                       MoveJ
+                         Waypoint_2
+                         MoveJ
+                           Waypoint_14
+                           Gripper Close (2)
+                         MoveJ
+                           Waypoint_15
+                           MoveJ
+                             Waypoint_33
+                             MoveJ
+                               Waypoint_34
+                               Gripper Open (2)
+                               MoveJ
+                                 Waypoint_2
+                                 MoveJ
+                                   Waypoint_14
+                                   Gripper Close (2)
+                                   MoveJ
+                                     Waypoint_15
+                                     MoveJ
+                                       Waypoint_35
+                                       MoveJ
+                                         Waypoint_36
+                                         Gripper Open (2)
+                                         MoveJ
+                                           Waypoint_37
+                                           Gripper Close (2)
+                                           MoveJ
+                                             Waypoint_38
+                                             Gripper Open (2)
+                                             MoveJ
+                                               Waypoint_39
+                                               Gripper Close (2)
+                                               MoveJ
+                                                 Waypoint_40
+                                                 MoveJ
+                                                   Waypoint_41
+                                                   MoveJ
+                                                     Waypoint_42
+                                                     Gripper Open (2)
+                                                     MoveJ
+                                                       Waypoint_2
+                                                       MoveJ
+                                                         Waypoint_14
+                                                         Gripper Close (2)
+                                                         MoveJ
+                                                           Waypoint_43
+                                                           MoveJ
+                                                             Waypoint_44
+                                                             MoveJ
+                                                               Waypoint_45
+                                                               Gripper Open (2)
+                                                               MoveJ
+                                                                 Waypoint_2
+                                                                 MoveJ
+                                                                   Waypoint_14
+                                                                   Gripper Close (2)
+                                                                   MoveJ
+                                                                     Waypoint_46
+                                                                     MoveJ
+                                                                       Waypoint_47
+                                                                       MoveJ
+                                                                         Waypoint_48
+                                                                         Gripper Open (2)
+                                                                         MoveJ
+                                                                           Waypoint_2
+                                                                           MoveJ
+                                                                             Waypoint_52
+                                                                             Gripper Close (2)
+                                                                             MoveJ
+                                                                               Waypoint_49
+                                                                               MoveJ
+                                                                                 Waypoint_50
+                                                                                 Gripper Open (2)
+                                                                                 MoveJ
+                                                                                   Waypoint_2
+                                                                                   MoveJ
+                                                                                     Waypoint_14
+                                                                                     Gripper Close (2)
+                                                                                     MoveJ
+                                                                                       Waypoint_51
+                                                                                       MoveJ
+                                                                                         Waypoint_53
+                                                                                         Gripper Open (2)
+                                                                                         MoveJ
+                                                                                           Waypoint_2
+                     Mouvement B
+                       MoveJ
+                         Waypoint_2
+                         MoveJ
+                           Waypoint_14
+                           Gripper Close (2)
+                         MoveJ
+                           Waypoint_15
+                           MoveJ
+                             Waypoint_33
+                             MoveJ
+                               Waypoint_34
+                               Gripper Open (2)
+                               MoveJ
+                                 Waypoint_2
+                                 MoveJ
+                                   Waypoint_14
+                                   Gripper Close (2)
+                                   MoveJ
+                                     Waypoint_15
+                                     MoveJ
+                                       Waypoint_35
+                                       MoveJ
+                                         Waypoint_36
+                                         Gripper Open (2)
+                                         MoveJ
+                                           Waypoint_37
+                                           Gripper Close (2)
+                                           MoveJ
+                                             Waypoint_54
+                                             Gripper Open (2)
+                                             MoveJ
+                                               Waypoint_39
+                                               Gripper Close (2)
+                                               MoveJ
+                                                 Waypoint_40
+                                                 MoveJ
+                                                   Waypoint_41
+                                                   MoveJ
+                                                     Waypoint_42
+                                                     Gripper Open (2)
+                                                     MoveJ
+                                                       Waypoint_55
+                                                     MoveJ
+                                                       Waypoint_2
+                                                       MoveJ
+                                                         Waypoint_14
+                                                         Gripper Close (2)
+                                                         MoveJ
+                                                           Waypoint_43
+                                                           MoveJ
+                                                             Waypoint_44
+                                                             MoveJ
+                                                               Waypoint_45
+                                                               Gripper Open (2)
+                                                               MoveJ
+                                                                 Waypoint_2
+                                                                 MoveJ
+                                                                   Waypoint_14
+                                                                   Gripper Close (2)
+                                                                   MoveJ
+                                                                     Waypoint_46
+                                                                     MoveJ
+                                                                       Waypoint_47
+                                                                       MoveJ
+                                                                         Waypoint_48
+                                                                         Gripper Open (2)
+                                                                         MoveJ
+                                                                           Waypoint_2
+                                                                           MoveJ
+                                                                             Waypoint_52
+                                                                             Gripper Close (2)
+                                                                             MoveJ
+                                                                               Waypoint_49
+                                                                               MoveJ
+                                                                                 Waypoint_50
+                                                                                 Gripper Open (2)
+                                                                                 MoveJ
+                                                                                   Waypoint_2
+                                                                                   MoveJ
+                                                                                     Waypoint_14
+                                                                                     Gripper Close (2)
+                                                                                     MoveJ
+                                                                                       Waypoint_51
+                                                                                       MoveJ
+                                                                                         Waypoint_53
+                                                                                         Gripper Open (2)
+                                                                                         MoveJ
+                                                                                           Waypoint_2
+                     Mouvement D
+                       MoveJ
+                         Waypoint_2
+                         MoveJ
+                           Waypoint_56
+                           Gripper Close (2)
+                           MoveJ
+                             Waypoint_57
+                             MoveJ
+                               Waypoint_58
+                               Gripper Open (2)
+                               MoveJ
+                                 Waypoint_2
+                                 MoveJ
+                                   Waypoint_56
+                                   Gripper Close (2)
+                                   MoveJ
+                                     Waypoint_57
+                                     MoveJ
+                                       Waypoint_58
+                                       Gripper Open (2)
+                                       MoveJ
+                                         Waypoint_2
+                                         MoveJ
+                                           Waypoint_59
+                                           Gripper Close (2)
+                                           MoveJ
+                                             Waypoint_60
+                                             Gripper Open (2)
+                                             MoveJ
+                                               Waypoint_2
+                                               MoveJ
+                                                 Waypoint_2
+                                                 MoveJ
+                                                   Waypoint_56
+                                                   Gripper Close (2)
+                                                   MoveJ
+                                                     Waypoint_57
+                                                     MoveJ
+                                                       Waypoint_58
+                                                       Gripper Open (2)
+                                                       MoveJ
+                                                         Waypoint_2
+                                                         MoveJ
+                                                           Waypoint_56
+                                                           Gripper Close (2)
+                                                           MoveJ
+                                                             Waypoint_57
+                                                             MoveJ
+                                                               Waypoint_58
+                                                               Gripper Open (2)
+                                                               MoveJ
+                                                                 Waypoint_2
+                                                                 Mouvement D'
+                                                                   MoveJ
+                                                                     Waypoint_2
+                                                                     MoveJ
+                                                                       Waypoint_56
+                                                                       Gripper Close (2)
+                                                                       MoveJ
+                                                                         Waypoint_57
+                                                                         MoveJ
+                                                                           Waypoint_58
+                                                                           Gripper Open (2)
+                                                                           MoveJ
+                                                                             Waypoint_2
+                                                                             MoveJ
+                                                                               Waypoint_56
+                                                                               Gripper Close (2)
+                                                                               MoveJ
+                                                                                 Waypoint_57
+                                                                                 MoveJ
+                                                                                   Waypoint_58
+                                                                                   Gripper Open (2)
+                                                                                   MoveJ
+                                                                                     Waypoint_2
+                                                                                     MoveJ
+                                                                                       Waypoint_62
+                                                                                       Gripper Close (2)
+                                                                                       MoveJ
+                                                                                         Waypoint_61
+                                                                                         Gripper Open (2)
+                                                                                         MoveJ
+                                                                                           Waypoint_2
+                                                                                           MoveJ
+                                                                                             MoveJ
+                                                                                               Waypoint_56
+                                                                                               Gripper Close (2)
+                                                                                               MoveJ
+                                                                                                 Waypoint_57
+                                                                                                 MoveJ
+                                                                                                   Waypoint_58
+                                                                                                   Gripper Open (2)
+                                                                                                   MoveJ
+                                                                                                     Waypoint_2
+                                                                                                     MoveJ
+                                                                                                       Waypoint_56
+                                                                                                       Gripper Close (2)
+                                                                                                       MoveJ
+                                                                                                         Waypoint_57
+                                                                                                         MoveJ
+                                                                                                           Waypoint_58
+                                                                                                           Gripper Open (2)
+                                                                                                           MoveJ
+                                                                                                             Waypoint_2
+                                                                                                             Mouvement D2
+                                                                                                               MoveJ
+                                                                                                                 Waypoint_2
+                                                                                                                 MoveJ
+                                                                                                                   Waypoint_56
+                                                                                                                   Gripper Close (2)
+                                                                                                                   MoveJ
+                                                                                                                     Waypoint_57
+                                                                                                                     MoveJ
+                                                                                                                       Waypoint_58
+                                                                                                                       Gripper Open (2)
+                                                                                                                       MoveJ
+                                                                                                                         Waypoint_2
+                                                                                                                         MoveJ
+                                                                                                                           Waypoint_56
+                                                                                                                           Gripper Close (2)
+                                                                                                                           MoveJ
+                                                                                                                             Waypoint_57
+                                                                                                                             MoveJ
+                                                                                                                               Waypoint_58
+                                                                                                                               Gripper Open (2)
+                                                                                                                               MoveJ
+                                                                                                                                 Waypoint_2
+                                                                                                                                 MoveJ
+                                                                                                                                   Waypoint_59
+                                                                                                                                   Gripper Close (2)
+                                                                                                                                   MoveJ
+                                                                                                                                     Waypoint_63
+                                                                                                                                     Gripper Open (2)
+                                                                                                                                     MoveJ
+                                                                                                                                       Waypoint_2
+                                                                                                                                       MoveJ
+                                                                                                                                         Waypoint_2
+                                                                                                                                         MoveJ
+                                                                                                                                           Waypoint_56
+                                                                                                                                           Gripper Close (2)
+                                                                                                                                           MoveJ
+                                                                                                                                             Waypoint_57
+                                                                                                                                             MoveJ
+                                                                                                                                               Waypoint_58
+                                                                                                                                               Gripper Open (2)
+                                                                                                                                               MoveJ
+                                                                                                                                                 Waypoint_2
+                                                                                                                                                 MoveJ
+                                                                                                                                                   Waypoint_56
+                                                                                                                                                   Gripper Close (2)
+                                                                                                                                                   MoveJ
+                                                                                                                                                     Waypoint_57
+                                                                                                                                                     MoveJ
+                                                                                                                                                       Waypoint_58
+                                                                                                                                                       Gripper Open (2)
+                                                                                                                                                       MoveJ
+                                                                                                                                                         Waypoint_2
