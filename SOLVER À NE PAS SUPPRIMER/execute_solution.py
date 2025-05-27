@@ -1,48 +1,45 @@
-import os
-import time
 import socket
+import time
+import os
 
-# Dossier contenant les programmes .urp des mouvements sur la clé USB du robot
-URP_FOLDER = "/programs/usb/Mouvements_cube_rubik"  # Chemin sur la clé USB montée dans le robot
+# ⚙️ Configuration
+ROBOT_IP = "adreseIP"  # ← Adresse IP de ton robot UR3e
+ROBOT_PORT = 30002         # Port standard de contrôle
+COOLDOWN_SECONDS = 2.5     # Délai entre chaque mouvement
+chemin_dossier = "Endroit/ou/les/scripts/sont  # ← Ton dossier contenant les .script
 
-# Adresse IP et port du robot UR (modifie selon ta configuration)
-ROBOT_IP = "192.168.2.84"
-ROBOT_PORT = 30002  # Port par défaut pour l'envoi de scripts
+# 🔁 Ajouter "sleep(2.5)" à chaque fichier script si ce n’est pas déjà présent
+for nom_fichier in os.listdir(chemin_dossier):
+    if nom_fichier.endswith(".script"):
+        chemin_complet = os.path.join(chemin_dossier, nom_fichier)
+        with open(chemin_complet, "r+") as f:
+            contenu = f.read().strip()
+            if not contenu.endswith("sleep(2.5)"):
+                f.write("\n\nsleep(2.5)\n")
+                print(f"✅ Ajout de sleep(2.5) à : {nom_fichier}")
+            else:
+                print(f"⏩ Déjà présent dans : {nom_fichier}")
 
-def get_program_name(move):
-    """
-    Traduit un mouvement du cube (U, U2, U', etc.) en nom de fichier de programme (.urp).
-    Exemple :
-        - "U"  → "U"
-        - "U2" → "U2"
-        - "U'" → "U3"
-    """
-    if move.endswith("'"):
-        return move[0] + "3"  # Ex : "F'" → "F3"
-    else:
-        return move  # "U", "U2", etc.
-
-def send_program_to_robot(program_path):
-    """
-    Envoie un script de chargement de programme URP au robot via socket.
-    Cela utilise la commande 'load' puis 'play' du programme .urp.
-    """
-    try:
-        # Génère une commande URScript pour charger et exécuter le programme
-        ur_script = f'load("{program_path}")\nplay\n'
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.connect((ROBOT_IP, ROBOT_PORT))
-            sock.sendall(ur_script.encode("utf-8"))
-            print(f"[INFO] Programme envoyé : {program_path}")
-            time.sleep(1.0)  # Attente pour exécution du mouvement
-    except Exception as e:
-        print(f"[ERREUR] Échec de l'envoi du programme : {e}")
-
+# 🚀 Envoie la séquence de mouvements au robot
 def execute_moves(move_list):
-    """
-    Exécute une liste de mouvements (ex: ['U', 'R', 'U2', 'R3']) sur le robot.
-    """
     for move in move_list:
-        program_name = get_program_name(move)
-        program_path = f"{URP_FOLDER}/{program_name}.urp"
-        send_program_to_robot(program_path)
+        script_name = move + ".script" 
+        script_path = os.path.join(chemin_dossier, script_name)
+
+        if not os.path.exists(script_path):
+            print(f"❌ Fichier introuvable : {script_name}")
+            continue
+
+        try:
+            with open(script_path, 'r') as file:
+                script_content = file.read()
+
+            print(f"📤 Envoi au robot : {script_name}")
+            with socket.create_connection((ROBOT_IP, ROBOT_PORT), timeout=5) as sock:
+                sock.sendall(script_content.encode('utf-8'))
+
+            print(f"✅ Envoyé : {move} → {script_name}")
+            time.sleep(COOLDOWN_SECONDS)
+
+        except Exception as e:
+            print(f"⚠️ Erreur lors de l'envoi de {script_name} : {e}")
