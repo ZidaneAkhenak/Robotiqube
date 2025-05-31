@@ -1,28 +1,12 @@
 def mouvement_U():
   global _hidden_verificationVariable=0
-  step_count_0f820c62_0906_41d3_ad98_a37a2b063642 = 0.0
-  thread Step_Counter_Thread_41ebdcfd_bef9_49c7_a408_2e476c8fb516():
-    while (True):
-      step_count_0f820c62_0906_41d3_ad98_a37a2b063642 = step_count_0f820c62_0906_41d3_ad98_a37a2b063642 + 1.0
-      sync()
-    end
-  end
-  run Step_Counter_Thread_41ebdcfd_bef9_49c7_a408_2e476c8fb516()
+  set_safety_mode_transition_hardness(1)
+  set_target_payload(0.100000, [0.000000, 0.000000, 0.000000], [0.000033, 0.000033, 0.000033, 0.000000, 0.000000, 0.000000])
   set_tool_communication(True, 115200, 0, 1, 1.5, 3.5)
   set_tool_output_mode(0)
   set_tool_digital_output_mode(0, 1)
   set_tool_digital_output_mode(1, 1)
   set_tool_voltage(24)
-  set_safety_mode_transition_hardness(1)
-  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
-  set_standard_analog_input_domain(0, 1)
-  set_standard_analog_input_domain(1, 1)
-  set_tool_analog_input_domain(0, 1)
-  set_tool_analog_input_domain(1, 1)
-  set_analog_outputdomain(0, 0)
-  set_analog_outputdomain(1, 0)
-  set_input_actions_to_default()
-  set_target_payload(0.100000, [0.000000, 0.000000, 0.000000], [0.000033, 0.000033, 0.000033, 0.000000, 0.000000, 0.000000])
   modbus_add_signal("172.17.101.13", 255, 3, 2, "red", False)
   modbus_set_signal_update_frequency("red", 10)
   modbus_add_signal("172.17.101.13", 255, 1, 2, "yellow", False)
@@ -32,11 +16,17 @@ def mouvement_U():
   modbus_add_signal("172.17.101.13", 255, 1, 1, "push_button", False)
   modbus_set_signal_update_frequency("push_button", 10)
   modbus_set_runstate_dependent_choice("push_button",0)
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_input_actions_to_default()
+  set_tcp(p[0.0,0.0,0.0,0.0,0.0,0.0])
   set_gravity([0.0, 0.0, 9.82])
   global error_red=0
   global error_green=0
-  global cube2x2=p[0.34198610081472264,-0.19516140588744962,0.042104541181709934,-2.1214661387997134,-2.3113922042559643,0.009136858962317366]
-  global fullCalib=p[0.351294889216199,-0.19914136760261641,0.03935525595245799,-0.07718128002016719,-3.1336468199247935,0.002545500983885477]
   global rq_mt_cam=p[0.07467036967595413,-0.2010712011923168,0.0960609607737966,0.4383892489427625,2.497398179699501,0.9146188795487102]
   global rq_mt_cam_adv=p[0.07466783144058756,-0.20108549606239204,0.09606996508595368,0.4383108872691212,2.4974634716845157,0.9145032200423499]
   # begin: URCap Installation Node
@@ -2402,6 +2392,14 @@ def mouvement_U():
       sleep(0.008)
   end
   # end: URCap Installation Node
+  step_count_b3d359cd_7619_41dc_aa0f_eec065a898f4 = 0.0
+  thread Step_Counter_Thread_df652244_f2dd_4235_ab5f_ad68278c48ce():
+    while (True):
+      step_count_b3d359cd_7619_41dc_aa0f_eec065a898f4 = step_count_b3d359cd_7619_41dc_aa0f_eec065a898f4 + 1.0
+      sync()
+    end
+  end
+  run Step_Counter_Thread_df652244_f2dd_4235_ab5f_ad68278c48ce()
   global Waypoint_1_p=p[.281080281253, -.114529329715, .394639767434, -2.239796848270, 2.151736905048, -.011509836935]
   global Waypoint_1_q=[0.05482436716556549, -1.5408958115479727, -1.1679037809371948, 4.311743898982666, 1.5795574188232422, 0.01624399609863758]
   global Waypoint_2_p=p[.360219497858, -.125089904721, .194569342311, -2.239781812366, 2.151864265632, -.011673876811]
