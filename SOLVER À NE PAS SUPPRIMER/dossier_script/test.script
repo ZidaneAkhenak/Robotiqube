@@ -1,0 +1,3 @@
+def test_program():
+	popup("Le test fonctionne!")
+end
