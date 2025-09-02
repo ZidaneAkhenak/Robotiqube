@@ -2,29 +2,32 @@ import socket
 import time
 import os
 
-# ⚙️ Configuration
-ROBOT_IP = "adreseIP"  # ← Adresse IP de ton robot UR3e
-ROBOT_PORT = 30002         # Port standard de contrôle
-COOLDOWN_SECONDS = 2.5     # Délai entre chaque mouvement
-chemin_dossier = "Endroit/ou/les/scripts/sont  # ← Ton dossier contenant les .script
+# Configuration du robot UR
+ROBOT_IP = "Ton adresse IP"
+ROBOT_PORT = 
 
-# 🔁 Ajouter "sleep(2.5)" à chaque fichier script si ce n’est pas déjà présent
-for nom_fichier in os.listdir(chemin_dossier):
-    if nom_fichier.endswith(".script"):
-        chemin_complet = os.path.join(chemin_dossier, nom_fichier)
-        with open(chemin_complet, "r+") as f:
-            contenu = f.read().strip()
-            if not contenu.endswith("sleep(2.5)"):
-                f.write("\n\nsleep(2.5)\n")
-                print(f"✅ Ajout de sleep(2.5) à : {nom_fichier}")
-            else:
-                print(f"⏩ Déjà présent dans : {nom_fichier}")
+# Dossier contenant les scripts
+chemin_dossier = "/endroit/où/tes/script"
 
-# 🚀 Envoie la séquence de mouvements au robot
+# Cooldowns pour chaque mouvement
+COOLDOWNS = {
+    'U1': 25,
+    'U3': 25,
+    'U2': 30,
+    'R1': 85,
+    'R3': 85,
+    'R2': 90,
+    'F1': 90,
+    'F3': 95,
+    'F2': 100,
+}
+
 def execute_moves(move_list):
-    for move in move_list:
-        script_name = move + ".script" 
+    for idx, move in enumerate(move_list):
+        script_name = move + ".script"
         script_path = os.path.join(chemin_dossier, script_name)
+
+        print(f"\n➡️ [{idx + 1}/{len(move_list)}] Préparation du mouvement : {move}")
 
         if not os.path.exists(script_path):
             print(f"❌ Fichier introuvable : {script_name}")
@@ -34,12 +37,31 @@ def execute_moves(move_list):
             with open(script_path, 'r') as file:
                 script_content = file.read()
 
-            print(f"📤 Envoi au robot : {script_name}")
+            if not script_content.strip():
+                print(f"⚠️ Le fichier {script_name} est vide. Mouvement ignoré.")
+                continue
+            
+            print(f"📤 Envoi de {script_name} au robot...")
             with socket.create_connection((ROBOT_IP, ROBOT_PORT), timeout=5) as sock:
+                time.sleep(0.3)  # Pause de sécurité
                 sock.sendall(script_content.encode('utf-8'))
+                time.sleep(0.2)  # ✅ Nouvelle ligne pour laisser le robot lire avant fermeture
+                sock.shutdown(socket.SHUT_WR)
 
-            print(f"✅ Envoyé : {move} → {script_name}")
-            time.sleep(COOLDOWN_SECONDS)
+            
+
+
+
+            cooldown = COOLDOWNS.get(move, 1.0)
+            print(f"⏳ Attente de {cooldown:.1f} secondes après le mouvement {move}...")
+            time.sleep(cooldown)
 
         except Exception as e:
             print(f"⚠️ Erreur lors de l'envoi de {script_name} : {e}")
+
+    print("\n✅ Tous les mouvements ont été traités.")
+
+if __name__ == '__main__':
+    # Exemple de solution pour test
+    example_solution = ["R1", "U3", "F2"]
+    execute_moves(example_solution)
